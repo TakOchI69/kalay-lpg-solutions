@@ -1,15 +1,10 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Flame, Shield, Truck } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Flame, Shield, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
 
 export function Hero() {
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <section
@@ -94,22 +89,16 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Button
-              variant="flame"
-              size="lg"
-              className="text-lg px-8"
-              onClick={() => scrollToSection("#contact")}
-            >
-              Get Started
-            </Button>
-            <Button
-              variant="hero"
-              size="lg"
-              className="text-lg px-8"
-              onClick={() => scrollToSection("#services")}
-            >
-              Our Services
-            </Button>
+            <Link to="/contact">
+              <Button variant="flame" size="lg" className="text-lg px-8">
+                Get Started
+              </Button>
+            </Link>
+            <Link to="/services">
+              <Button variant="hero" size="lg" className="text-lg px-8">
+                Our Services
+              </Button>
+            </Link>
           </motion.div>
 
           {/* Quick Stats */}
@@ -144,15 +133,6 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <motion.button
-        onClick={() => scrollToSection("#about")}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-primary-foreground/60 hover:text-accent transition-colors"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-      >
-        <ArrowDown className="h-6 w-6" />
-      </motion.button>
     </section>
   );
 }
