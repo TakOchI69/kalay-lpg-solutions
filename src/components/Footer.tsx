@@ -48,7 +48,7 @@ export function Footer() {
               className="lg:col-span-1"
             >
               <div className="mb-4">
-                <img src={logo} alt="Kalay LPG" className="h-28 w-auto" />
+                <img src={logo} alt="Kalay LPG" className="h-36 w-auto" />
               </div>
               <p className="text-primary-foreground/70 text-sm leading-relaxed">
                 Leading LPG processing and distribution facility serving residential, 
