@@ -32,7 +32,7 @@ export function PageHeader({ title, subtitle, breadcrumb }: PageHeaderProps) {
             transition={{ duration: 0.5 }}
             className="mb-6"
           >
-            <img src={logo} alt="Kalay LPG" className="h-32 w-auto mx-auto" />
+            <img src={logo} alt="Kalay LPG" className="h-44 w-auto mx-auto" />
           </motion.div>
 
           {/* Breadcrumb */}
