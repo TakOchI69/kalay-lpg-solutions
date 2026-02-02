@@ -122,7 +122,7 @@ export function Navbar() {
 
         {/* Main Navigation */}
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-24">
             {/* Logo */}
             <motion.div whileHover={{ scale: 1.02 }}>
               <Link to="/" className="flex items-center gap-2">
