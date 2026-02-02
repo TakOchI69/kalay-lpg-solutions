@@ -126,7 +126,7 @@ export function Navbar() {
             {/* Logo */}
             <motion.div whileHover={{ scale: 1.02 }}>
               <Link to="/" className="flex items-center gap-2">
-                <img src={logo} alt="Kalay LPG" className="h-14 w-auto" />
+                <img src={logo} alt="Kalay LPG" className="h-20 w-auto" />
               </Link>
             </motion.div>
 
