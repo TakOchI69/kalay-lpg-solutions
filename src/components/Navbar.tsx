@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, Facebook, Instagram, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/kalay-logo.jpg";
+import logo from "@/assets/kalay-logo.png";
 
 // Custom icons for platforms not in Lucide
 const TikTokIcon = () => (
@@ -125,16 +125,8 @@ export function Navbar() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <motion.div whileHover={{ scale: 1.02 }}>
-              <Link to="/" className="flex items-center gap-3">
-                <img src={logo} alt="Kalay LPG" className="h-10 w-auto rounded-lg" />
-                <div className="hidden sm:block">
-                  <span className={`font-display font-bold ${showTransparent ? "text-primary-foreground" : "text-foreground"}`}>
-                    Kalay LPG
-                  </span>
-                  <span className={`block text-xs ${showTransparent ? "text-primary-foreground/60" : "text-muted-foreground"}`}>
-                    (Pvt.) Ltd.
-                  </span>
-                </div>
+              <Link to="/" className="flex items-center gap-2">
+                <img src={logo} alt="Kalay LPG" className="h-14 w-auto" />
               </Link>
             </motion.div>
 

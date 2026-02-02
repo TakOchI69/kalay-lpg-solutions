@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Flame, Phone, MapPin, Mail, Facebook, Instagram, Youtube } from "lucide-react";
-import logo from "@/assets/kalay-logo.jpg";
+import logo from "@/assets/kalay-logo.png";
 
 // Custom icons for platforms not in Lucide
 const TikTokIcon = () => (
@@ -47,14 +47,8 @@ export function Footer() {
               viewport={{ once: true }}
               className="lg:col-span-1"
             >
-              <div className="flex items-center gap-3 mb-4">
-                <img src={logo} alt="Kalay LPG" className="h-12 w-auto rounded-lg" />
-                <div>
-                  <h3 className="font-display text-xl font-bold text-primary-foreground">
-                    Kalay LPG
-                  </h3>
-                  <p className="text-primary-foreground/60 text-sm">(Pvt.) Ltd.</p>
-                </div>
+              <div className="mb-4">
+                <img src={logo} alt="Kalay LPG" className="h-20 w-auto" />
               </div>
               <p className="text-primary-foreground/70 text-sm leading-relaxed">
                 Leading LPG processing and distribution facility serving residential, 
@@ -91,6 +85,12 @@ export function Footer() {
                   <a href="tel:03091173737" className="flex items-start gap-2 text-primary-foreground/70 hover:text-accent text-sm transition-colors">
                     <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
                     <span>0309 117 3737</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:03424442249" className="flex items-start gap-2 text-primary-foreground/70 hover:text-accent text-sm transition-colors">
+                    <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                    <span>0342 444 2249</span>
                   </a>
                 </li>
                 <li>

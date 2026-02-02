@@ -14,6 +14,12 @@ const contactInfo = [
     href: "tel:03091173737",
   },
   {
+    icon: Phone,
+    label: "Phone",
+    value: "0342 444 2249",
+    href: "tel:03424442249",
+  },
+  {
     icon: MessageCircle,
     label: "WhatsApp",
     value: "0341 866 5166",
