@@ -24,7 +24,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden -mt-[104px] pt-[104px]"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden -mt-[120px] pt-[120px]"
     >
       {/* Background Images with Fade Transition */}
       <div className="absolute inset-0">
