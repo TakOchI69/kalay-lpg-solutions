@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
-import logo from "@/assets/kalay-logo.png";
+import logo from "@/assets/page-header-logo.png";
 
 interface BreadcrumbItem {
   label: string;
